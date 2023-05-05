@@ -1,0 +1,145 @@
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.logo span {
+    color: var(--second-bg);
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    z-index: 999;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 6px 14px -5px #ccc;
+}
+
+@media (max-width:991px) {
+    .navbar>div {
+        flex-direction: row-reverse;
+    }
+
+    .logo {
+        margin-left: 5rem;
+    }
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list li {
+    color: var(--nav-color);
+    letter-spacing: 2px;
+    font-size: .9rem;
+    transition: .3s;
+    border-bottom: 1px solid transparent;
+    margin: 0 1rem;
+}
+
+.nav-list li:hover {
+    border-bottom: 1px solid var(--second-bg);
+}
+
+.shop {
+    position: relative;
+    max-width: 20px;
+    cursor: pointer;
+}
+
+.shop .quantity {
+    position: absolute;
+    background-color: var(--second-bg);
+    color: white;
+    font-size: .8rem;
+    font-weight: 500;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    right: 5px;
+}
+
+.burger-part i {
+    font-size: 2rem;
+    color: var(--second-bg);
+}
+
+.burger-list {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    color: var(--main-title);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .4s linear;
+    left: 0;
+    background-color: var(--third-bg);
+    z-index: 999;
+}
+
+.burger-list li {
+    padding: 0.5rem 1rem;
+    transition: .3s;
+    margin-bottom: 1rem;
+    color: var(--prim-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.burger-list li:hover {
+    transform: translateX(10px);
+}
+
+.burger-list .logo {
+    margin-bottom: 2rem;
+}
+
+.hide {
+    transform: translateX(-100%);
+    z-index: 999;
+}
+
+.burger-icon {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.close-burger {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--second-bg);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media (max-width:991px) {
+    .burger-icon {
+        display: block;
+    }
+
+    .burger-part {
+        display: block;
+    }
+}
+
+@media (max-width:991px) {
+    .nav-list {
+        display: none;
+    }
+}

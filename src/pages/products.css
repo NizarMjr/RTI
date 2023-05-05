@@ -1,0 +1,29 @@
+.products-title {
+    background-color: var(--second-bg);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--main-title);
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width:667px) {
+    .products-title {
+        font-size: 1rem;
+        padding-left: 2rem;
+    }
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem
+}
+
+@media (max-width:769px) {
+    .products {
+        flex-direction: column;
+    }
+}

@@ -2,26 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Kumbh+Sans:wght@200;300;400;700&family=League+Spartan:wght@200;300;500;700&family=Manrope:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700&family=Outfit:wght@200;300;400;500;600;700&family=Peralta&family=Poppins:wght@200;300;400;500;600&family=Rajdhani:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@400;500;700&family=Sen:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    --main-bg: #f1f5f8;
+    --second-bg: #ab7a5f;
+    --third-bg: #eaded7;
+    --prim-color: #453227;
+    --sec-color: #795744;
+    --box-color: #c5a491;
+    --nav-color: #b6bcc8;
+    --secondary-color: #68707d;
+    --main-title: #102a42;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navList {
+    font-size: .9rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.navList:hover {
+    transform: translateX(5px);
+}
+
+/* Small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width:992px) {
+    .container {
+        width: 950px;
+    }
+}
+
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.none {
+    display: none;
+}
+
+.active {
+    color: white;
+    background-color: var(--second-bg);
+    border-radius: 5px;
+    width: 100px;
+    padding: .5rem;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    color: white;
+    background-color: var(--second-bg);
+    border-radius: 5px;
+    transition: .3s;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: var(--second-bg);
+    background-color: white;
+    border: 1px solid var(--second-bg);
+}
+
+.section {
+    margin: 2rem 0;
+}
+
+.section .main-title {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: fit-content;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.1;
+    position: relative;
+    color: #102a42;
+}
+
+.main-title::before {
+    content: '';
+    position: absolute;
+    width: calc(100% / 2);
+    height: 4px;
+    background-color: var(--second-bg);
+    left: 50%;
+    bottom: .8rem;
+    transform: translateX(-50%);
+}
+
+@media (max-width:668px) {
+    .main-title {
+        font-size: 1.8rem !important;
+    }
 }

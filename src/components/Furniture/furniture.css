@@ -1,0 +1,79 @@
+.furniture {
+    background-color: var(--third-bg);
+    padding: 3rem 0 1rem;
+}
+
+.furniture .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:991px) {
+    .furniture .title {
+        flex-direction: column;
+    }
+}
+
+.title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--prim-color);
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:668px) {
+    .title h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.title p {
+    color: var(--sec-color);
+    line-height: 1.8;
+}
+
+@media (max-width:668px) {
+    .title p {
+        font-size: .9rem;
+    }
+}
+
+.boxes .homebox {
+    background-color: var(--box-color);
+    border-radius: 5px;
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.boxes .homebox h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--prim-color);
+}
+
+@media (max-width:668px) {
+    .boxes .homebox h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.homebox i {
+    width: 60px;
+    height: 60px;
+    background-color: var(--third-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--sec-color);
+    margin: 0 auto 1rem;
+}
+
+.homebox p {
+    font-size: .9rem;
+    line-height: 1.7;
+    color: var(--sec-color);
+}

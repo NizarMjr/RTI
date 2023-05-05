@@ -1,0 +1,33 @@
+.cart {
+    position: fixed;
+    right: 2rem;
+    top: 6rem;
+    padding: 1rem;
+    border: 1px solid #777;
+    width: 350px;
+    min-height: 200px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.cart h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #777;
+    margin-bottom: 2rem;
+}
+
+.cart .empty-cart {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+@media (max-width:992px) {
+    .cart {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% / 1.5);
+        margin: 0 auto;
+    }
+}

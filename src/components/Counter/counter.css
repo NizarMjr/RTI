@@ -1,0 +1,23 @@
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter span {
+    font-size: 2rem;
+    color: var(--sec-color);
+    display: block;
+    font-weight: bold;
+    margin: 0 2rem;
+}
+
+.counter button {
+    padding: 1rem 0px;
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--prim-color);
+}

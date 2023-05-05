@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "name": "Abri Animaux LUKA",
+        "categorie": "Accessoires",
+        "material": "Métal",
+        "price": "549",
+        "promo": "-15%",
+        "delivery": "8",
+        "color": "Noire",
+        "image": "/assets/pic-1.jpeg"
+    },
+    {
+        "id": "2",
+        "name": "Abri Animaux LUKA",
+        "categorie": "Accessoires",
+        "material": "Métal",
+        "price": "549",
+        "promo": "-15%",
+        "delivery": "8",
+        "color": "Noire",
+        "image": "/assets/pic-2.jpeg"
+    },
+    {
+        "id": "3",
+        "name": "Abri Animaux LUKA",
+        "categorie": "Accessoires",
+        "material": "Métal",
+        "price": "549",
+        "promo": "-15%",
+        "delivery": "8",
+        "color": "Noire",
+        "image": "/assets/pic-3.jpeg"
+    },
+    {
+        "id": "4",
+        "name": "Abri Animaux LUKA",
+        "categorie": "Accessoires",
+        "material": "Métal",
+        "price": "549",
+        "promo": "-15%",
+        "delivery": "8",
+        "color": "Noire",
+        "image": "/assets/pic-4.jpeg"
+    },
+    {
+        "id": "5",
+        "name": "Abri Animaux LUKA",
+        "categorie": "Accessoires",
+        "material": "Métal",
+        "price": "549",
+        "promo": "-15%",
+        "delivery": "8",
+        "color": "Noire",
+        "image": "/assets/pic-5.jpeg"
+    }
+]
